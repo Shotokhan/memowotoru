@@ -1,0 +1,10 @@
+gameserver/
+memowotoru/data/db/
+memowotoru/.idea/
+memowotoru/src/volume/
+memowotoru_patched/data/db/ 
+memowotoru_patched/.idea/
+memowotoru_patched/src/volume/
+*/__pycache__/
+exploits/.idea/
+

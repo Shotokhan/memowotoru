@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Note created successfully</h1>
+</center>
+<div class="well">
+    <h3><b>You're going to be redirected to your homepage...</b></h3>
+</div>
+{% endblock %}
+{% block script %}
+<script nonce="{{ nonce }}">
+  setTimeout(() => { document.location.replace("/"); }, 2500);
+</script>
+{% endblock %}

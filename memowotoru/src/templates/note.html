@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Here is the note you requested</h1>
+</center>
+<div class="well">
+    <h3><b>{{ note['title'] }}</b></h3>
+    <div class="well">
+        <p>{{ note['content'] }}</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Your notes</h1>
+</center>
+{% for note in notes %}
+<div class="well">
+    <a href="{{ note['url'] | urlencode }}"><h3><b>{{ note['title'] }}</b></h3></a>
+</div>
+{% endfor %}
+{% endblock %}

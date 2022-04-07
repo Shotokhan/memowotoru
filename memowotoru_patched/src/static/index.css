@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Minster", Times New Roman;
+  src: url(fonts/minster1.ttf);
+}
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Nothing You Could Do', cursive;
+}
+p {
+  font-size: 125%;
+}
+h4 {
+  font-size: 150%
+}
+.well {
+  background: black;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 19px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+img {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+button {
+  color: white;
+  font-family: inherit;
+}
+input[type=text] {
+  font-family: inherit;
+}
+textarea {
+  font-family: inherit;
+  color: inherit;
+  background: black;
+}

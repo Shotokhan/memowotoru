@@ -1,0 +1,15 @@
+{
+  "mongo": {
+    "hostname": "mongodb_notes",
+    "port": 27017,
+    "db_name": "memowotoru",
+    "user": "light",
+    "password": "yagami"
+  },
+  "flask": {
+    "SECRET_KEY": "shinigami",
+    "SESSION_COOKIE_SECURE": false,
+    "SESSION_COOKIE_SAMESITE": "Lax"
+  }
+}
+

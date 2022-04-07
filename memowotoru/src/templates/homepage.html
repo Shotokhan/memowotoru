@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Hello, {{ username }}</h1>
+</center>
+<div class="well">
+    <h3><b>What is your will?</b></h3>
+    <div class="well">
+
+        <a href="/public_notes"><p>I want to see public notes</p></a>
+        <a href="/user_notes"><p>Let me see my notes</p></a>
+        <a href="/create_note"><p>Write a note on my diary</p></a>
+        <a href="/logout"><p>I have to go away, now</p></a>
+    </div>
+</div>
+{% endblock %}

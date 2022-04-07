@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "hostname": "mongodb_notes_patched",
+    "port": 27017,
+    "db_name": "memowotoru",
+    "user": "light",
+    "password": "very_hard_to_guess"
+  },
+  "flask": {
+    "SESSION_COOKIE_SECURE": false,
+    "SESSION_COOKIE_SAMESITE": "Lax"
+  }
+}

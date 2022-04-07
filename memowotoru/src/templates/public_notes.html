@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Public notes</h1>
+</center>
+{% for note in notes %}
+<div class="well">
+    <h3><b>From {{ note['author'] }}</b></h3>
+    <div class="well">
+        <a href="{{ note['url'] | urlencode }}"><p>{{ note['title'] }}</p></a>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

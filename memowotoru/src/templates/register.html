@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Register</h1>
+<form action="/register" method="post">
+  <div class="well">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="" name="username" id="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="" name="password" id="password" required>
+
+    <label for="confirm_password"><b>Repeat Password</b></label>
+    <input type="password" placeholder="" name="confirm_password" id="confirm_password" required>
+    <button type="submit" id="submit" class="well">Submit</button>
+  </div>
+</form>
+</center>
+{% endblock %}
+{% block script %}
+<script nonce="{{ nonce }}">
+  document.getElementById('submit').disabled = true;
+  obj = document.getElementById('password');
+  obj.addEventListener("change", check_pw);
+  obj = document.getElementById('confirm_password');
+  obj.addEventListener("change", check_pw);
+</script>
+{% endblock %}

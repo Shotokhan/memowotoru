@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+<h1>Create note</h1>
+<form action="/create_note" method="post" id="create_note">
+  <div class="well">
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="" name="title" id="title" required>
+
+    <label for="is_public"><b>Do you want the note to be public?</b></label>
+    <input type="checkbox" name="is_public" id="is_public"><br><br>
+
+    <textarea name="content" form="create_note" class="well">Enter content here...</textarea><br><br>
+    <button type="submit" id="submit" class="well">Submit</button>
+  </div>
+</form>
+</center>
+{% endblock %}
