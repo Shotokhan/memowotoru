@@ -1,5 +1,7 @@
 # memowotoru
 
+![alt text](memowotoru.png)
+
 This is an attack-defense-CTF-like training exercise; there is:
 
 - a dockerized vulnerable service, which is ```memowotoru```;
@@ -9,6 +11,9 @@ This is an attack-defense-CTF-like training exercise; there is:
 
 The idea was to use [this](https://github.com/pomo-mondreganto/ForcAD) gameserver, but it had many issues, so we made a more modest arrangement and left here the checker for reference to write an equivalent checker for another platform. <br>
 In fact, we developed another platform: [this one](https://github.com/Shotokhan/ad_kihon). <br>
+
+![alt text](ad_platform.png)
+
 To deploy the platform, there is ```gameserver.yml```; to deploy the entire game, with the services, there is the ```Makefile```, with commands ```up``` and ```stop```. <br>
 In ```volume``` folder there is the ```config.json``` for the new platform, ```requirements.txt``` for the checker, and ```memowotoru``` subfolder with the actual checker. <br>
 You have to change ```config.json``` by modifying start time and end time, and IP addresses of the services, according to your local docker network (or by using container names, if it works). <br>
