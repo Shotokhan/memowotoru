@@ -7,4 +7,5 @@ memowotoru_patched/.idea/
 memowotoru_patched/src/volume/
 */__pycache__/
 exploits/.idea/
+data/db/
 

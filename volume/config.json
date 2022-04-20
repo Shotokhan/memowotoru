@@ -1,0 +1,51 @@
+{
+  "teams": [
+    {
+      "id": 0,
+      "host": "192.168.144.1",
+      "name": "vuln",
+      "token": "c2e192800a294acbb2ac7dd188502edb"
+    },
+    {
+      "id": 1,
+      "host": "192.168.160.2",
+      "name": "patched",
+      "token": "934310005a1447b8bd52d9dcbd5c405a"
+    }
+  ],
+  "services": [
+    {
+      "id": 0,
+      "port": 7331,
+      "name": "memowotoru",
+      "checker": "volume/memowotoru/memowotoru_checker.py"
+    }
+  ],
+  "mongo": {
+    "hostname": "mongodb_memo_kihon",
+    "port": 27017,
+    "db_name": "ad_kihon",
+    "user": "admin",
+    "password": "admin"
+  },
+  "flask": {
+    "port": 8080
+  },
+  "misc": {
+    "start_time": "20 apr 2022 17:40",
+    "end_time": "20 apr 2022 18:40",
+    "round_time": 60,
+    "flag_lifetime": 5,
+    "atk_weight": 10,
+    "def_weight": 10,
+    "sla_weight": 80,
+    "flag_header": "flag",
+    "flag_body_len": 30,
+    "rate_limit_seconds": 5,
+    "max_flags_per_submission": 20,
+    "scoreboard_cache_update_latency": 5,
+    "base_score": 1000,
+    "dispatch_frequency": 2
+  }
+}
+ 

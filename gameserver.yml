@@ -1,0 +1,29 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb_memo_kihon
+    hostname: mongodb_memo_kihon
+    user: 1000:1000
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+      - TZ=Europe/Rome
+    volumes:
+      - ./data/db/:/data/db/
+    expose:
+      - 27017
+    restart: on-failure
+
+  app:
+    image: shotokhan/ad_kihon:1.0
+    container_name: ad_memo_kihon
+    hostname: ad_memo_kihon
+    environment:
+      - TZ=Europe/Rome
+    ports:
+      - 8080:8080
+    volumes:
+      - ./volume:/usr/src/app/src/volume
+    restart: on-failure
+ 
